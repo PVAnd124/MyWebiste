@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    background-color: gray; /* Set the background color for the entire container */
+}
+
+.container .left {
+    flex: 400%;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    overflow: hidden;
+}
+
+.container .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .right {
+    grid-row: 2;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white; /* Set the same background color as the container */
+}
+
+.container #threejs-container {
+    grid-row: 1;
+    height: 100vh; /* Fill the entire height of the left column */
+    width: 100vw; /* Fill the entire width of the left column */
+    display: flex;
+    justify-content: flex-start; /* Align content to the left side */
+    align-items: center; /* Center content vertically */
+    overflow: hidden; /* Set a transparent background */
+}

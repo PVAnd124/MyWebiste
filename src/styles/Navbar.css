@@ -1,0 +1,147 @@
+/* display flex allows for child elements to be flexible and responsive*/
+/*flex-direction row sets the flex container's main axis to be horizontal, so everything in the navbar will be placed left to right*/
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 0.48fr 1fr 0.5fr;
+}
+/*align-items center vertically centers the things inside leftSide*/
+.navbar .leftSide {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid: 1;
+}
+
+.navbar .leftSide .name {
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.navbar .center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    grid: 2;
+}
+
+.navbar .rightSide {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 6%;
+    grid: 3;
+}
+
+.navbar .rightSide img {
+    height: auto;
+    width: 25%;
+    object-fit: cover;
+}
+
+.navbar a {
+    color: blanchedalmond;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+}
+
+.navbar .center #hamburger button {
+    background-color: transparent;
+    border: none;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+
+.navbar .center #hamburger button:hover {
+    transform: scale(1.1);
+}
+
+/*conditional display based on IDs -- #open and #close*/
+
+.navbar #open {
+    padding-left: 0px;
+}
+
+.navbar #open img {
+    display: none;
+}
+
+.navbar #close img {
+    display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+    display: inherit;
+    margin-left: 30px;
+}
+
+#close .name {
+    display: inherit;
+}
+
+#open .name {
+    display: none;
+}
+
+.navbar #close .hiddenLinks {
+    display: none;
+}
+
+.navbar #open a {
+    width: 70px;
+    margin: 5px;
+}
+
+/*for media queries*/
+
+/*for screen widths up to 900px*/
+@media only screen and (max-width: 900px) {
+    .navbar .center a {
+        width: 70px;
+    }
+    .navbar .leftSide {
+        padding-left: 50px;
+    }
+}
+
+/*for screen widths up to 600px*/
+@media only screen and (max-width: 600px) {
+    .navbar .center a {
+      display: none;
+    }
+  
+    .navbar .center {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    .navbar .center button {
+      display: inherit;
+    }
+  }
+  
+/*for screen widths above 600px*/
+@media only screen and (min-width: 600px) {
+    .navbar .center button {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+  }
