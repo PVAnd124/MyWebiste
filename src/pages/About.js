@@ -75,6 +75,9 @@ function About() {
                     <Link to="https://github.com/PVAnd124"><GitHubIcon style={{ fontSize: '100%' }}/></Link>
                 </div>
             </p>
+            <p id="reach">
+                I'm currently seeking internship opportunities in Data Science and Software Engineering. Reach out at: praveenpalvijay@gmail.com.
+            </p>
         </div>
     </div>
   )
