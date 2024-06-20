@@ -16,7 +16,7 @@ function Landing() {
         <div className='Intro'>
             <button>
             <p>
-                Welcome to my website!<br></br>I'm Praveen Vijayakumar, a student at the University of Illinois <br></br> at Urbana-Champaign studying Bioengineering and Computer Science.
+                Welcome to my website! I'm Praveen Vijayakumar, a student at the University of Illinois at Urbana-Champaign studying Bioengineering and Computer Science.
             </p>
             </button>
         </div>

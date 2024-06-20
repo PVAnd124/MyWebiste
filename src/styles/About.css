@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
 }
 
 .about .header h1 {
@@ -9,50 +10,76 @@
     text-decoration: underline;
     font-style: italic;
     color: blanchedalmond;
-    font-size: 80px;
+    font-size: 400%;
 }
 
 .about .leftRightContainer {
-    padding-top: 150px;
-    display: flex;
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    padding-left: 80px;
+    width: 90%;
+    gap: 10%;
 }
 
 .about .leftRightContainer .left {
-    flex: 50%;
+    grid-column: 1;
     display: flex;
     justify-content: flex-start;
-    padding-left: 5%;
     align-items: center;
 }
 
 .about .leftRightContainer .left img {
-    height: 60%;
-    width: 60%;
-    border-radius: 20%;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
     object-fit: cover;
-    border-color: blanchedalmond;
-    border-width: 10px;
     border-style: inset;
 }
 
 .about .leftRightContainer .right {
-    flex: 50%;
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.left button {
+    background-color: transparent;
+    border-radius: 20%;
+    border-color: blanchedalmond;
+    border-width: 0.5em;
+    padding: 0;
+    width: 85%;
+    height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.right button {
+    background-color: transparent;
+    border-radius: 20%;
+    border-color: blanchedalmond;
+    border-width: 0.5em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 95%;
+    height: 90%;
 }
 
 .about .leftRightContainer .right p {
     align-items: start;
     color: whitesmoke;
     font-size: 150%;
-    border: 10px solid blanchedalmond;
-    padding: 10px;
+    padding: 5%;
     width: fit-content;
-    border-radius: 20%;
+    line-height: 1.5;
 }
 
 .about .leftRightContainer .right a {
@@ -76,7 +103,7 @@
 }
 
 .about .extra {
-    padding-top: 400px;
+    padding-top: 15%;
     font-size: 200%;
     color: blanchedalmond;
     margin: 5%;
@@ -89,39 +116,47 @@
 }
 
 .about .skills {
-    padding-top: 100px;
+    padding-top: 10%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 120px;
-    row-gap: 120px;
-    height: 60vh;
-    justify-items: center;
-    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    column-gap: 10%;
+    row-gap: 15%;
+    margin: auto;
 }
 
 .about .skillsHeader {
-    padding-top: 200px;
+    padding-top: 10%;
     color: blanchedalmond;
     display: flex;
     flex-direction: column;
     font-size: 60px;
+    justify-content: center;
+    align-content: center;
     color: blanchedalmond;
     font-style: italic;
     text-decoration: underline;
 }
 
 .about .skills button {
-    padding: 40px 60px;
-    border-radius: 30px;
+    padding: 1.5rem 2.5rem;
+    border-radius: 20%;
     background-color: blanchedalmond;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
-    border: 2px solid burlywood;
+    font-size: 1rem;
+    border: 0.35em solid burlywood;
     position: relative;
     box-shadow: 5px 4px 3px rgba(0, 0, 0, 10);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: auto;
 }
 
 .about .skills button:hover {
@@ -144,88 +179,103 @@
     grid-column: 1;
     grid-row: 1;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s2 {
     grid-column: 2;
     grid-row: 1;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s3 {
     grid-column: 3;
     grid-row: 1;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s4 {
     grid-column: 4;
     grid-row: 1;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s5 {
     grid-column: 5;
     grid-row: 1;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s6 {
     grid-column: 1;
     grid-row: 2;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s7 {
     grid-column: 2;
     grid-row: 2;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s8 {
     grid-column: 3;
     grid-row: 2;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s9 {
     grid-column: 4;
     grid-row: 2;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s10 {
     grid-column: 5;
     grid-row: 2;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s11 {
     grid-column: 1;
     grid-row: 3;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s12 {
     grid-column: 2;
     grid-row: 3;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s13 {
     grid-column: 3;
     grid-row: 3;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s14 {
     grid-column: 4;
     grid-row: 3;
     color: white;
+    margin: auto;
 }
 
 .about .skills #s15 {
     grid-column: 5;
     grid-row: 3;
     color: white;
+    margin: auto;
 }

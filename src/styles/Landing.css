@@ -25,12 +25,12 @@
 }
 
 .home .Intro {
+    padding-top: 5%;
     grid-row: 2;
     color: blanchedalmond;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
     z-index: 1;
 }
 
@@ -41,6 +41,7 @@
     border: 2px transparent;
     border-radius: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 10);
+    width: 90%;
 }
 
 p {
@@ -53,7 +54,7 @@ p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 5%;
 }
 
 .links button {

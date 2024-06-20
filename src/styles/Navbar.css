@@ -2,7 +2,7 @@
 /*flex-direction row sets the flex container's main axis to be horizontal, so everything in the navbar will be placed left to right*/
 .navbar {
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: gray;
     align-items: center;
     justify-content: center;
