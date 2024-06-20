@@ -3,7 +3,7 @@ import React from 'react'
 export const ProjectList = [
     {
         name: "This Website!",
-        description: "Developed this interactive website with React.js, CSS, HTML, and THREE.js. Some of my favorite features include the magic mouse (shatter effect) and 3D interactive icosahedran. Feel free to explore, and don't forget to check out the number of pixels you've traversed at the very bottom of any page!",
+        description: "Developed this interactive website with React.js, CSS, and HTML. One of my favorite features is the magic mouse (shatter effect). Feel free to explore, and don't forget to check out the number of pixels you've traversed at the very bottom of any page!",
         link: '/',
     },
     {
@@ -27,8 +27,8 @@ export const ProjectList = [
         link: 'https://www.ncbi.nlm.nih.gov/nuccore/2085767330',
     },
     {
-        name: "Coming Soon",
-        description: "Stay Tuned!",
+        name: "AcademiaGPT - Coming Soon",
+        description: "We all have to read research papers at some point in our college lives, and the language used in these papers are not always the friendliest! Wouldn't it be useful to have a tool that makes it easier to understand these papers? Stay tuned!",
         link: '',
     },
 ]
