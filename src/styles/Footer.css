@@ -37,9 +37,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 3%;
+    padding-right: 10%;
     grid: 3;
     color: blanchedalmond;
+}
+
+.footer .pixelCount {
+    font-style: italic;
+    font-size: 18px;
 }
 
 .footer a {
@@ -71,28 +76,4 @@
     margin-top: 7px;
     background-color: transparent;
     border: none;
-}
-
-.footer .rightSide button {
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    border: none;
-    color: blanchedalmond;
-}
-
-.footer .rightSide button:hover {
-    transform: scale(1.05);
-}
-
-.footer .rightSide #text {
-    flex: 1;
-    font-size: 18px;
-    margin-right: 10px;
-    margin-top: 7px;
-}
-
-.footer button:hover {
-    cursor: pointer;
-    transform: scale(1.1);
 }

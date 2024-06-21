@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Resume from '../assets/SWE Resume (17).pdf';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
-function Footer() {
+function Footer({ totalDistance }) {
   return (
     <div className='footer'>
         <div className="leftSide">
@@ -27,7 +27,15 @@ function Footer() {
             </div>     
         </div>
         <div className="rightSide">
-            <a href={Resume} download="Resume.pdf">
+            <div className="pixelCount">Your Mouse Has Traveled {totalDistance} px!</div>
+        </div>
+    </div>
+  )
+}
+
+export default Footer
+
+/*<a href={Resume} download="Resume.pdf">
                 <button>
                     <div id="text">
                         My Resume
@@ -36,11 +44,4 @@ function Footer() {
                         <CloudDownloadIcon style={{ fontSize: '30px' }}/>
                     </div>
                 </button>
-            </a>
-        </div>
-    </div>
-  )
-}
-
-export default Footer
-
+            </a>*/
