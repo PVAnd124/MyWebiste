@@ -79,7 +79,7 @@ function About() {
                 </div>
             </p>
             <p id="reach">
-                I'm currently seeking internship opportunities in Data Science and Software Engineering. Reach out at: praveenpalvijay@gmail.com.
+                I'm currently seeking internship opportunities in Data Science and Software Engineering. Reach out at: pv16@illinois.edu.
             </p>
         </div>
     </div>

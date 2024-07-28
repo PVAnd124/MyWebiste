@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     display: grid;
-    grid-template-columns: 0.48fr 1fr 0.5fr;
+    grid-template-columns: 0.48fr 1fr 0.47fr;
 }
 /*align-items center vertically centers the things inside leftSide*/
 .navbar .leftSide {
@@ -44,7 +44,7 @@
 
 .navbar .rightSide img {
     height: auto;
-    width: 25%;
+    width: 80%;
     object-fit: cover;
 }
 
@@ -114,9 +114,6 @@
     .navbar .center a {
         width: 70px;
     }
-    .navbar .leftSide {
-        padding-left: 50px;
-    }
 }
 
 /*for screen widths up to 600px*/
@@ -127,7 +124,7 @@
   
     .navbar .center {
       justify-content: flex-end;
-      padding-right: 50px;
+      padding-right: 50%;
     }
   
     .navbar .center button {
@@ -145,3 +142,69 @@
       display: none;
     }
   }
+
+
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        width: 100%;
+        height: 5%;
+        background-color: gray;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 0.45fr 1fr 0.47fr;
+    }
+
+    .navbar .rightSide img {
+        height: auto;
+        width: 90%;
+        object-fit: cover;
+    }
+    
+    .navbar .center #hamburger button {
+        background-color: transparent;
+        border: none;
+        color: blanchedalmond;
+        cursor: pointer;
+    }
+    
+    .navbar .center #hamburger button:hover {
+        transform: scale(1.1);
+    }
+    
+    /*conditional display based on IDs -- #open and #close*/
+    
+    .navbar #open {
+        padding-left: 0px;
+    }
+    
+    .navbar #open img {
+        display: none;
+    }
+    
+    .navbar #close img {
+        display: inherit;
+    }
+    
+    .navbar #open .hiddenLinks {
+        display: inherit;
+        margin-left: 30px;
+    }
+    
+    #close .name {
+        display: inherit;
+    }
+    
+    #open .name {
+        display: none;
+    }
+    
+    .navbar #close .hiddenLinks {
+        display: none;
+    }
+    
+    .navbar #open a {
+        width: 70px;
+        margin: 5px;
+    }
+}
